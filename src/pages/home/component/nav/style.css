@@ -1,0 +1,161 @@
+/* body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+nav {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px; */
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: var(--black);
+  z-index: 999;
+}
+
+.left-nav {
+  width: 10%;
+}
+
+.mid-nav {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-logo {
+  color: var(--pink);
+  border-top: 3px solid var(--pink);
+  border-bottom: 3px solid var(--pink);
+  border-radius: 25%;
+}
+
+.right-nav {
+  width: 10%;
+  color: var(--white);
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--white) 0%, var(--pink));
+}
+
+.nav-toggle-btn {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 10px;
+}
+
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  /* width: 230px; */
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--blue) 0%, var(--white));
+  border-radius: 10px;
+  font-size: 2rem;
+  gap: 8px;
+  align-items: center;
+}
+
+li:hover {
+  background: linear-gradient(180deg, var(--white) 0%, var(--blue));
+}
+
+a {
+  text-decoration: none;
+
+}
+
+/* a:hover{
+  color: var(--white);
+} */
+
+/* .icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+} */
+
+.refresh {
+  /* padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; */
+}
+
+@media screen and (max-width: 400px) {
+  .nav-background {
+    width: 80px;
+  }
+
+  ul {
+    padding: 11px;
+  }
+
+  li {
+    font-size: 0rem;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+.styled-button{
+  padding: 10px;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--pink));
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: larger;
+}
+.styled-button:hover{
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--pink) 0%, var(--blue));
+  box-shadow: 0px 0px 5px var(--black);
+}
