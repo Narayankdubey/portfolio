@@ -1,0 +1,34 @@
+
+.projects-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+  .thumbnail{
+    width: 100%;
+  }
+
+  .small{
+    width: 300px;
+    height: 250px;
+  }
+
+  .detail{
+    position: absolute;
+    align-items: flex-start;
+  }
+
+  .detail-left{
+    width: 50%;
+    max-width: 50%;
+  }
+  .detail-right{
+    width: 50%;  
+  }
+  .detail-right>*{
+    margin-top: 10px;
+  }
