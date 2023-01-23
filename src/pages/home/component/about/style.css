@@ -1,0 +1,18 @@
+.about-content{
+    width: 250px;
+    margin-top: 50px;
+    transition: 0.7s;
+}
+
+.about-content:hover{
+    transform: scale(1.2);
+}
+
+.location-img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-content>*{
+    margin-top: 10px;
+}

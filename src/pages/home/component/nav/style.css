@@ -38,8 +38,8 @@ nav {
 
 .name-logo {
   color: var(--pink);
-  border-top: 3px solid var(--pink);
-  border-bottom: 3px solid var(--pink);
+  border-top: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
   border-radius: 25%;
 }
 

@@ -6,6 +6,8 @@ import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import "./style.css"
 
+import Resume from '../../../../assests/Resume.docx'
+
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -57,7 +59,7 @@ const Navbar = () => {
       <h1 className="name-logo">Narayan Dubey</h1>
       </div>
       <div className="right-nav center">
-        <a href="#Home">
+        <a href={Resume} >
           <h3>Download</h3>
           <small>Resume</small>
 </a>

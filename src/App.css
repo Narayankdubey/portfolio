@@ -40,6 +40,14 @@
   width: 50%;
 }
 
+.color-pink{
+  color: var(--pink);
+}
+
+.color-disabled{
+  color: var(--disabled);
+}
+
 @media screen and (max-width:780px) {
   .left {
   width: 100%;
