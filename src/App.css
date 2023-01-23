@@ -48,6 +48,13 @@
   color: var(--disabled);
 }
 
+a{
+  color: var(--white);
+}
+a:hover{
+  color: var(--pink);
+}
+
 @media screen and (max-width:780px) {
   .left {
   width: 100%;

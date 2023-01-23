@@ -4,9 +4,9 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import "./style.css"
+import "./style.css";
 
-import Resume from '../../../../assests/Resume.docx'
+import Resume from "../../../../assests/Resume.docx";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -14,8 +14,8 @@ const sidebar = {
     transition: {
       type: "spring",
       stiffness: 20,
-      restDelta: 2
-    }
+      restDelta: 2,
+    },
   }),
   closed: {
     clipPath: "circle(30px at 40px 40px)",
@@ -23,25 +23,26 @@ const sidebar = {
       delay: 0.5,
       type: "spring",
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 };
 
 const Navbar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const [open, setOpen] = React.useState("false")
+  const [open, setOpen] = React.useState("false");
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
   React.useEffect(() => {
-    if (isOpen) { setOpen(true) }
-    else {
+    if (isOpen) {
+      setOpen(true);
+    } else {
       setTimeout(() => {
-        setOpen(false)
-      }, 1000)
+        setOpen(false);
+      }, 1000);
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
     <motion.nav
@@ -51,21 +52,21 @@ const Navbar = () => {
       ref={containerRef}
     >
       <div className="left-nav">
-      <motion.div className="nav-background" variants={sidebar} />
-      <Navigation open={open} toggle={toggleOpen} />
-      <MenuToggle toggle={() => toggleOpen()} />
+        <motion.div className="nav-background" variants={sidebar} />
+        <Navigation open={open} toggle={toggleOpen} />
+        <MenuToggle toggle={() => toggleOpen()} />
       </div>
       <div className="mid-nav">
-      <h1 className="name-logo">Narayan Dubey</h1>
+        <h1 className="name-logo">Narayan Dubey</h1>
       </div>
       <div className="right-nav center">
-        <a href={Resume} >
+        <a href={Resume} className="resume-download">
           <h3>Download</h3>
           <small>Resume</small>
-</a>
+        </a>
       </div>
     </motion.nav>
   );
 };
 
-export default Navbar
+export default Navbar;
