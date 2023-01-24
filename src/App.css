@@ -2,7 +2,7 @@
   width: 100%;
   /* height: 100%; */
   padding: 20px;
-  padding-top: 150px;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -83,6 +83,19 @@ a:hover{
 }
 .pointer:hover{
   cursor: pointer;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.marginTop10{
+  margin-top: 10px;
+}
+.marginTop20{
+  margin-top: 20px;
+}
+.marginTop30{
+  margin-top: 30px;
 }
 @media screen and (max-width:780px) {
   .left {

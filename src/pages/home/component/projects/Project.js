@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { Button, LfBox } from "../../../../components";
+import { Button } from "../../../../components";
 import "./style.css";
 
 const Project = () => {
@@ -36,7 +36,7 @@ const Project = () => {
 
         <AnimatePresence>
           {selectedId && (
-            <motion.div className="detail card space-between" layoutId={selectedId?.id}>
+            <motion.div className="detail card " layoutId={selectedId?.id}>
                <motion.button
                   className="close-btn"
                   onClick={() => setSelectedId(null)}
@@ -49,8 +49,7 @@ const Project = () => {
                   src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg"
                 />
               </div>
-              <div className="detail-right">
-               
+              <div className="detail-right">               
                 <motion.h3>{selectedId?.title}</motion.h3>
                 <motion.h5>{selectedId?.subtitle}</motion.h5>
                 <motion.div>
@@ -61,21 +60,9 @@ const Project = () => {
                   <Button style={{marginLeft:"10px"}}>Code</Button>
                 </motion.div>
               </div>
-              {/* <motion.h5>{item.subtitle}</motion.h5>
-       <motion.h2>{item.title}</motion.h2> */}
             </motion.div>
           )}
         </AnimatePresence>
-        {/* 
-<motion.div
-      layout
-      data-isOpen={isOpen}
-      initial={{ borderRadius: 50 }}
-      className="parent"
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <motion.div layout className="child" />
-    </motion.div> */}
       </div>
     </div>
   );

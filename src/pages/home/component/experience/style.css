@@ -1,0 +1,22 @@
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-icon{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    padding: 15px;
+    background-color: var(--disabled);
+    border-radius:30%;
+}
+.exp-container{
+    display: flex;
+    gap: 30px;
+}
+
+.exp-details{
+    word-wrap: break-word;
+}

@@ -4,6 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
+import { UilDownloadAlt } from "@iconscout/react-unicons";
 import "./style.css";
 
 import Resume from "../../../../assests/Resume.docx";
@@ -61,8 +62,11 @@ const Navbar = () => {
       </div>
       <div className="right-nav center">
         <a href={Resume} className="resume-download">
-          <h3>Download</h3>
-          <small>Resume</small>
+          <UilDownloadAlt />
+          <div>
+            <h3>Download</h3>
+            <small>Resume</small>
+          </div>
         </a>
       </div>
     </motion.nav>

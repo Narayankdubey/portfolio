@@ -7,7 +7,7 @@ import myImg from "../../../../assests/icons.png";
 
 const Info = () => {
   return (
-    <div id="Home" className="page-container">
+    <div id="Home" className="page-container" style={{alignItems:"center"}}>
       <div className="">
         <LfBox type="rf">
           <h1 className="bold-name">Narayan Dubey</h1>

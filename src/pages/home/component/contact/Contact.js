@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { UilMobileAndroid,UilAt,UilMessage,UilSpinnerAlt } from '@iconscout/react-unicons'
+
 import { Button } from "../../../../components";
 import "./style.css";
 const Contact = () => {
@@ -11,17 +13,16 @@ const Contact = () => {
   return (
     <div id="Contact" className="page-container">
       <div className="contact-container">
-        <h1>Contact</h1>
-        <div className="contact-btn">
+        <h1 >Contact Us</h1>
+        <div className="contact-btn marginTop30">
           <a href="tel:9122329747">
-            <Button>9122329747</Button>
+            <Button><UilMobileAndroid/>9122329747</Button>
           </a>
           <a href="maitto::narayan.k.dubey@gmail.com">
-            <Button>narayan.k.dubey@gmail.com</Button>
+            <Button><UilAt/>narayan.k.dubey@gmail.com</Button>
           </a>
         </div>
         <div className="form-container">
-          <h2>Contact Form</h2>
           <form onSubmit={handleSubmit}>
             <div className="formItem">
               {/* <label htmlFor="name">Name</label> */}
@@ -40,7 +41,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <Button type="submit" disabled={loading}>{loading ? "Submitting..." : "Submit"}</Button>
+              <Button type="submit" disabled={loading}> {loading ? "Submitting..." : "Submit"}{loading?<UilSpinnerAlt/>:<UilMessage/>}</Button>
               {/* <button type="submit" className="button" disabled={loading}>
                 {loading ? "Submitting..." : "Submit"}
               </button> */}
