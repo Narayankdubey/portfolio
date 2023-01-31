@@ -58,7 +58,7 @@ const Navbar = () => {
         <MenuToggle toggle={() => toggleOpen()} />
       </div>
       <div className="mid-nav">
-        <h1 className="name-logo">Narayan Dubey</h1>
+        <h2 className="name-logo">Narayan Dubey</h2>
       </div>
       <div className="right-nav center">
         <a href={Resume} className="resume-download">

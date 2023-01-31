@@ -3,17 +3,18 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { Button } from "../../../../components";
 import "./style.css";
+import pragyaRosystemWeb from "../../../../assests/pragyaRosystem-web.jpg"
 
 const Project = () => {
   const [selectedId, setSelectedId] = useState(null);
   const items = [
-    { id: 1, title: "Pragya RO System", subtitle: "A small e-commerce site for a shop.",tech:["React","Express","Material Ui"] },
-    { id: 2, title: "Pragya RO System App", subtitle: "A small e-commerce app for a shop.",tech:["React-Native","Express"] },
+    { id: 1, title: "Pragya RO System", subtitle: "A small e-commerce site for a shop.",tech:["React","Express","Material Ui"],img:pragyaRosystemWeb },
+    { id: 2, title: "Pragya RO System App", subtitle: "A small e-commerce app for a shop.",tech:["React-Native","Express"],img:pragyaRosystemWeb },
   ];
   return (
     <div id="Project" className="page-container">
       <div className="width100">
-        <h1>Project</h1>
+        <h1>Projects</h1>
       </div>
       <div className="projects-container">
         {items.map((item) => (
@@ -27,7 +28,7 @@ const Project = () => {
           >
             <motion.img
               className="thumbnail"
-              src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg"
+              src={item?.img}
             />
             <motion.h2>{item.title}</motion.h2>
             <motion.h5>{item.subtitle}</motion.h5>
@@ -45,8 +46,8 @@ const Project = () => {
                 </motion.button>
               <div className="detail-left">
                 <motion.img
-                  className="thumbnail"
-                  src="https://www.projectmanager.com/wp-content/uploads/2021/10/211014_Blog_Feature_Project_Environment-scaled.jpg"
+                  className=""
+                  src={selectedId?.img}
                 />
               </div>
               <div className="detail-right">               

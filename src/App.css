@@ -55,6 +55,10 @@ a:hover{
   color: var(--pink);
 }
 
+h1{
+  font-size: 2.5rem;
+}
+
 .card{
   padding: 10px;
   color: var(--black);
