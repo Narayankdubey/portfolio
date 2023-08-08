@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedPage from "../../../../components/ui/AnimatedPage";
 
 import "./style.css";
 
@@ -26,7 +27,7 @@ const Experience = () => {
     },
   ]
   return (
-    <div id="Experience" className="page-container">
+    <AnimatedPage id="Experience" className="page-container">
       <div className="width100">
         <h1>Skills & Experiences</h1>
       </div>
@@ -52,7 +53,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-    </div>
+      </AnimatedPage>
   );
 };
 

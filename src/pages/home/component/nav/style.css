@@ -110,7 +110,7 @@ a {
 
 @media screen and (max-width: 400px) {
   .nav-background {
-    width: 80px;
+    width: 95px;
   }
 
   ul {
@@ -118,6 +118,7 @@ a {
   }
 
   li {
+    width: 50px;
     font-size: 0rem;
     gap: 8px;
     justify-content: center;

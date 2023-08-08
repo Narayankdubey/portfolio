@@ -40,9 +40,14 @@
 .img-container > img {
   width: 350px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 840px) {
   .info-container {
     width: 95%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .info-container {
+    width: 100%;
   }
   .img-container > img {
     width: 300px;
